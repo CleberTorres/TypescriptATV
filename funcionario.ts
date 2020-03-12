@@ -1,6 +1,6 @@
 namespace Hospital{
 
-    export class funcionario{
+    export class funcionario extends pessoa{
 
         private codFuncionario:number;
      

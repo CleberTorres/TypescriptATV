@@ -3,7 +3,7 @@ namespace Hospital{
     export class Hospital{
 
         private Nome:string;
-        private Enfermeiros:Array<Enfermeiro> = [];
+        private enfermeiros:Array<Enfermeiro> = [];
         private Medicos:Array<Medico> = [];
         private Pacientes:Array<Paciente> = [];
 
@@ -14,11 +14,24 @@ namespace Hospital{
         setNome(Nome:string):void{
             this.Nome = Nome;
         }
-        getEnfermeiro():string{
-            return this.Enfermeiro;
+     
+        addEnfermeiro(Enfermeiro:Enfermeiro):void{
+            this.enfermeiros.push(Enfermeiro)
+        }
+           getEnfermeiro(){
+            return this.enfermeiros;
         } 
-        addNome(Enfermeiro:Enfermeiro):void{
-            this.Enfermeiros.push(Enfermeiro)
+            addMedicos(medico:Medico):void{
+                this.Medicos.push(medico)
+            }
+            getMedicos(){
+                return this.Medicos;
+            }
+            addPacientes(paciente:Paciente):void{
+                this.Pacientes.push(paciente)
+            }
+            getPacientes(){
+                return this.Pacientes;
+            }
         }
     }
-}
