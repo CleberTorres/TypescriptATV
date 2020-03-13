@@ -1,8 +1,8 @@
 namespace Hospital{
-    export class Medico extends pessoa{
+    export class Medico extends funcionario{
 
         private crm:number;
-        private especialidade:number;
+        private especialidade:string;
 
         getcrm(): number{
         return this.crm;
@@ -11,10 +11,10 @@ namespace Hospital{
             this.crm = crm;
         }
 
-        getespecialidade(): number{
+        getespecialidade(): string{
         return this.especialidade;
         }
-        setespecialidade(especialidade:number):void{
+        setespecialidade(especialidade:string):void{
             this.especialidade = especialidade;
         }
     }

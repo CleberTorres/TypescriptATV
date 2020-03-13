@@ -26,6 +26,6 @@ var Hospital;
             this.coren = coren;
         };
         return Enfermeiro;
-    }(Hospital.pessoa));
+    }(Hospital.funcionario));
     Hospital.Enfermeiro = Enfermeiro;
 })(Hospital || (Hospital = {}));

@@ -1,23 +1,20 @@
 {
-  "name": "typescript",
+  "name": "typescriptatv",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "live-server"
   },
-  "repository": {
+    "repository": {
     "type": "git",
-    "url": "git+https://github.com/CleberTorres/TypescriptATV.git"
+    "url": "git+https://github.com/CleberTorres/typescriptatv.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CleberTorres/TypescriptATV/issues"
+    "url": "https://github.com/CleberTorres/typescriptatv/issues"
   },
-  "homepage": "https://github.com/CleberTorres/TypescriptATV#readme",
-  "dependencies": {
-    "live-server": "^0.1.25-beta.0"
-  }
+  "homepage": "https://github.com/CleberTorres/typescriptatv#readme"
 }

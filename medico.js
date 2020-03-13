@@ -32,6 +32,6 @@ var Hospital;
             this.especialidade = especialidade;
         };
         return Medico;
-    }(Hospital.pessoa));
+    }(Hospital.funcionario));
     Hospital.Medico = Medico;
 })(Hospital || (Hospital = {}));
