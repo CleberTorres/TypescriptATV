@@ -2,21 +2,18 @@
 var Hospital;
 (function (Hospital) {
     var pessoa = /** @class */ (function () {
-        function pessoa(NomePessoa, Cpfpessoa) {
-            this.CpfPessoa;
-            this.NomePessoa;
+        function pessoa(NomePessoa, CpfPessoa) {
+            this.CpfPessoa = CpfPessoa;
+            this.NomePessoa = NomePessoa;
         }
-        pessoa.prototype.getNomePessoa = function () {
-            return this.NomePessoa;
-        };
-        pessoa.prototype.setNomePessoa = function (nome) {
-            this.NomePessoa;
-        };
-        pessoa.prototype.getCpfPessoa = function () {
+        pessoa.prototype.getCpf = function () {
             return this.CpfPessoa;
         };
-        pessoa.prototype.setCpfPessoa = function (Cpf) {
-            this.CpfPessoa = Cpf;
+        pessoa.prototype.getNome = function () {
+            return this.NomePessoa;
+        };
+        pessoa.prototype.setNome = function (NomePessoa) {
+            this.NomePessoa = NomePessoa;
         };
         return pessoa;
     }());

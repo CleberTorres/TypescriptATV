@@ -6,20 +6,20 @@ namespace Hospital{
     p.setCodPaciente(1);
     
     let p1 = new Paciente("Bielzinho DEV","200.311.710-01");
-    p.setCodPaciente(2);
+    p1.setCodPaciente(2);
     
     let p2 = new Paciente("David ev","154.349.378-30");
-    p.setCodPaciente(3);
+    p2.setCodPaciente(3);
 
     /*FUNCIONARIO f*/
     
-      let f = new funcionario("João nascimento","001.101.001-24");
+      let f = new Funcionario("João nascimento","001.101.001-24");
              f.setCodFuncionario(11);
    
-      let f1 = new funcionario("Joseph augusto","420.478.279-11");
+      let f1 = new Funcionario("Joseph augusto","420.478.279-11");
             f.setCodFuncionario(12);
    
-      let f2 = new funcionario("Carlinhos albert","478.341.309-99");
+      let f2 = new Funcionario("Carlinhos albert","478.341.309-99");
             f.setCodFuncionario(13);
 
     /*MÉDICO m*/
@@ -69,30 +69,31 @@ namespace Hospital{
 
         document.getElementById("hospital").textContent=h.getNome();
             
-        let tbMedico = document.getElementById("Hospital");
+        let tbMedico = document.getElementById("Medico");
 
         h.getMedicos().forEach(h=>{
-            let Nome = h.getNomePessoa();
+            let Nome = h.getNome();
             let id = h.getCodFuncionario();
-            let cpf = h.getCpfPessoa();
+            let cpf = h.getCpf();
             let crm = h.getcrm();
             let especialidade = h.getespecialidade();
             let html = "<tr><td>"+id+"</td><td>"+Nome+"</td><td>"+cpf+"</td><td>"+especialidade+"</td><td>"+crm+"</td></tr>";
+             tbMedico.innerHTML += html;
         }) 
          let tbEnfermeiro = document.getElementById("Enfermeiro");
         h.getEnfermeiro().forEach(h=>{
             let id = h.getCodFuncionario();
-            let Nome = h.getNomePessoa();  
-            let cpf = h.getCpfPessoa();
+            let Nome = h.getNome();  
+            let Cpf = h.getCpf();
             let coren = h.getCoren();
-            let html = "<tr><td>"+id+"</td><td>"+Nome+"</td><td>"+cpf+"</td><td>"+coren+"</td></tr>";
+            let html = "<tr><td>"+id+"</td><td>"+Nome+"</td><td>"+Cpf+"</td><td>"+coren+"</td></tr>";
             tbEnfermeiro.innerHTML += html;
         })
    let tbPacientes = document.getElementById("Pacientes");
          h.getPacientes().forEach(h=>{
             let id = h.getCodPaciente();
-            let Nome = h.getNomePessoa();  
-            let cpf = h.getCpfPessoa();
+            let Nome = h.getNome();  
+            let cpf = h.getCpf();
             let html = "<tr><td>"+id+"</td><td>"+Nome+"</td><td>"+cpf+"</td></tr>";
             tbPacientes.innerHTML += html;
         }) 

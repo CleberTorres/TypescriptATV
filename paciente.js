@@ -22,8 +22,8 @@ var Hospital;
         Paciente.prototype.getCodPaciente = function () {
             return this.CodPaciente;
         };
-        Paciente.prototype.setCodPaciente = function (CodPaciente) {
-            this.CodPaciente = CodPaciente;
+        Paciente.prototype.setCodPaciente = function (Cod) {
+            this.CodPaciente = Cod;
         };
         return Paciente;
     }(Hospital.pessoa));

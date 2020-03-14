@@ -4,23 +4,21 @@ namespace Hospital{
         private NomePessoa:string;
         private CpfPessoa: string;
 
-        constructor(NomePessoa:string, Cpfpessoa:string){
-            this.CpfPessoa;
-            this.NomePessoa;
+        constructor(NomePessoa:string, CpfPessoa:string){
+            this.CpfPessoa = CpfPessoa; 
+            this.NomePessoa = NomePessoa;
         }
 
-        getNomePessoa(): string{
-            return this.NomePessoa;
-        }
-        setNomePessoa(nome:string):void{
-            this.NomePessoa
-        }
-        
-        getCpfPessoa(): string{
+        getCpf():string{
             return this.CpfPessoa;
         }
-        setCpfPessoa(Cpf:string){
-            this.CpfPessoa = Cpf;
+        
+        getNome():string{
+            return this.NomePessoa;
+        }
+        
+        setNome(NomePessoa:string):void{
+            this.NomePessoa = NomePessoa;
         }
     }
 }

@@ -1,13 +1,13 @@
 namespace Hospital{
  export class Paciente extends pessoa {
     
-    private CodPaciente:number;
+    CodPaciente:number;
 
     getCodPaciente():number{
         return this.CodPaciente;
     }
-    setCodPaciente(CodPaciente:number):void{
-        this.CodPaciente = CodPaciente;
+    setCodPaciente(Cod:number):void{
+        this.CodPaciente = Cod;
         }
     }
 }

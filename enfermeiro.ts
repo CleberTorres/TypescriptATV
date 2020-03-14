@@ -1,6 +1,6 @@
 namespace Hospital{
 
-    export class Enfermeiro extends funcionario{
+    export class Enfermeiro extends Funcionario{
 
         private coren:number;
 
